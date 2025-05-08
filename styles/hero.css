@@ -1,0 +1,58 @@
+.hero-gradient {
+    background: linear-gradient(135deg, #0a0a1a 0%, #1a1a2a 100%);
+}
+
+.hero-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+.hero-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(108, 43, 217, 0.2), rgba(131, 71, 229, 0.2));
+    z-index: 1;
+}
+
+.hero-image img {
+    transition: transform 0.5s ease;
+}
+
+.hero-image:hover img {
+    transform: scale(1.05);
+}
+
+.hero-content h1 {
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
+.hero-cta {
+    transition: all 0.3s ease;
+}
+
+.hero-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px -1px rgba(108, 43, 217, 0.2);
+}
+
+.hero-floating-card {
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}

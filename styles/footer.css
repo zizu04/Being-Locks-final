@@ -1,0 +1,80 @@
+.footer {
+    position: relative;
+    background: linear-gradient(to top, #0a0a1a, rgba(10, 10, 26, 0.9));
+}
+
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(to right, transparent, rgba(108, 43, 217, 0.5), transparent);
+}
+
+.footer-title {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+}
+
+.footer-title::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    bottom: -8px;
+    left: 0;
+    background-color: #6c2bd9;
+}
+
+.footer-link {
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+}
+
+.footer-link:hover {
+    color: #8347e5;
+    transform: translateX(4px);
+}
+
+.social-icon {
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: translateY(-4px);
+    color: #6c2bd9;
+}
+
+.footer-bottom {
+    position: relative;
+}
+
+.footer-bottom::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 1px;
+    background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.1), transparent);
+}
+
+.footer-contact-info {
+    transition: all 0.3s ease;
+}
+
+.footer-contact-info:hover {
+    transform: translateX(4px);
+}
+
+.footer-brand-text {
+    background: linear-gradient(45deg, #8347e5, #6c2bd9);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
